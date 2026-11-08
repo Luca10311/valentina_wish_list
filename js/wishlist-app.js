@@ -269,15 +269,11 @@ function renderGrid() {
                 <i class="fa-solid fa-gift"></i>
             </div>
             <div class="space-y-3">
-                <h4 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-slate-100">All current gifts are reserved! 🎉</h4>
+                <h4 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-slate-100">All current gifts on list are purchased! 🎉</h4>
                 <p class="text-base md:text-lg font-medium text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl mx-auto">
-                    Thank you so much to everyone who claimed a gift! You can wait for new items to show up, or feel free to check back later.
+                    Thank you so much to everyone who purchased a gift for Me! You can wait for new items to show up later or cash and a card works to :).
                 </p>
             </div>
-            <a href="https://store.bambulab.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/25 transition-colors hover:bg-indigo-500">
-                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                Visit Bambu Lab Store
-            </a>
         `;
         grid.appendChild(card);
         return;
