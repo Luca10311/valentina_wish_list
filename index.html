@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Wish List</title>
+    <title> V's Wish List</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/script.js"></script>
 
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/wishlist.css">
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white transition-colors duration-300">
 
@@ -21,9 +21,11 @@
     <header class="border-b border-slate-200/80 dark:border-slate-800/80 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-30 transition-colors duration-300">
         <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3.5">
-                <img src="pics/logo.png" alt="Made by Luca" class="w-14 h-14 object-contain">
+                <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-600 shadow-md shadow-indigo-500/25 flex items-center justify-center" aria-hidden="true">
+                    <i class="fa-solid fa-gift text-2xl text-white"></i>
+                </div>
                 <div>
-                    <h1 class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-slate-900 via-indigo-950 to-purple-900 dark:from-white dark:via-slate-200 dark:to-indigo-200 bg-clip-text text-transparent">Luca's Wish List</h1>
+                    <h1 class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-slate-900 via-indigo-950 to-purple-900 dark:from-white dark:via-slate-200 dark:to-indigo-200 bg-clip-text text-transparent">Valentina's Wish List</h1>
                 </div>
             </div>
         </div>
@@ -44,7 +46,7 @@
                 </div>
                 <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Hey there! 👋</h2>
                 <p class="text-sm md:text-base text-indigo-100 leading-relaxed">
-                    I've put together This entire software experience a few gift ideas I'd love. If you choose one, please claim it below so everyone knows it's taken.
+                    I've put together a few gift ideas I'd love. If you choose one, please claim it below so everyone knows it's taken.
                 </p>
             </div>
         </div>
@@ -65,7 +67,10 @@
     <!-- Footer -->
     <footer class="border-t border-slate-200 dark:border-slate-800/80 py-3 text-xs text-slate-500 dark:text-slate-500 transition-colors duration-300">
         <div class="max-w-5xl mx-auto px-4 flex items-center justify-end gap-3">
-            <p>&copy; Luca 2026</p>
+            <div class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400">
+                <img src="pics/logo.png" alt="Valentina logo" class="w-4 h-4 object-contain rounded-sm" />
+                <p>&copy; Luca & Valentina 2026</p>
+            </div>
             <div id="themeToggle" role="group" aria-label="Color theme" class="inline-flex items-center gap-0.5 rounded-lg border p-0.5">
                 <button type="button" data-theme-choice="system" aria-pressed="false" class="rounded-md border border-transparent px-2 py-1 text-[11px] transition-colors">System</button>
                 <button type="button" data-theme-choice="light" aria-pressed="false" class="rounded-md border border-transparent px-2 py-1 text-[11px] transition-colors">Light</button>
@@ -116,6 +121,8 @@
 
     <!-- Hidden iframe for silent Google Sheets form posts -->
     <iframe name="hidden_gsheet_iframe" id="hidden_gsheet_iframe" class="hidden-gsheet-iframe"></iframe>
+
+    <script src="js/wishlist-app.js"></script>
 
 
 </body>
