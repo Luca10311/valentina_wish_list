@@ -271,7 +271,7 @@ function renderGrid() {
             <div class="space-y-3">
                 <h4 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-slate-100">All current gifts on list are purchased! 🎉</h4>
                 <p class="text-base md:text-lg font-medium text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl mx-auto">
-                    Thank you so much to everyone who purchased a gift for Me! You can wait for new items to show up later or cash and a card works to :).
+                    Thank you so much to everyone who purchased a gift for Me! You can wait for new items to show up later or cash and a card works just the same :)
                 </p>
             </div>
         `;
